@@ -10,7 +10,6 @@ export default function RowsComponent(props: { row: Rows }) {
 	const color = filterContextValue?.color
 	return (
 		<div className='my-rows'>
-			{color}
 			<div
 				className='card bold'
 				style={{ background: color || 'white' }}
