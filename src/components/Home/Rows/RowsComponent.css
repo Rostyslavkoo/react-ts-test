@@ -1,0 +1,21 @@
+.my-rows {
+	padding-bottom: 250px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.card {
+	background: #ffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	flex: 1 1;
+    font-weight: 200;
+    color: #00000098;
+}
+.card.bold {
+    font-weight: bold;
+    background: #ffffffc7;
+    color: #000000;
+
+}

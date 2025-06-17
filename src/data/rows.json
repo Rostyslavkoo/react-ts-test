@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Project Setup",
+      "description": "Allow users to view and edit their personal information. Allow users to view and edit their personal information. Allow users to view and edit their personal information. Allow users to view and edit their personal information. Allow users to view and edit their personal information.  " 
+    },
+    {
+      "id": 2,
+      "title": "UI Design",
+      "description": "Create wireframes and mockups for the main application pages."
+    },
+    {
+      "id": 3,
+      "title": "Implement user sign-up functionality with form validation.Implement user sign-up functionality with form validation.Implement user sign-up functionality with form validation.Implement user sign-up functionality with form validation.",
+      "description": "Implement user sign-up functionality with form validation."
+    },
+    {
+      "id": 4,
+      "title": "Login System",
+      "description": "Add login and logout features using token-based authentication."
+    },
+    {
+      "id": 5,
+      "title": "Dashboard",
+      "description": "Display key user data and statistics on the home screen."
+    },
+    {
+      "id": 6,
+      "title": "User Profile",
+      "description": "Allow users to view and edit their personal information."
+    },
+    {
+      "id": 7,
+      "title": "Task List",
+      "description": "Show a list of tasks with filtering and sorting options."
+    },
+    {
+      "id": 8,
+      "title": "Add New Task",
+      "description": "Provide a form to create new tasks with deadlines and tags."
+    },
+    {
+      "id": 9,
+      "title": "Notifications",
+      "description": "Implement a notification system to alert users of updates."
+    },
+    {
+      "id": 10,
+      "title": "Project Deployment",
+      "description": "Test and deploy the application to the production server."
+    }
+  ]
+  
