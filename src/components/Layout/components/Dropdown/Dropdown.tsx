@@ -27,7 +27,7 @@ export default function Dropdown({
 	};
 	const [open, setOpen] = useState(false);
 	return (
-		<div className='my-dropdown'>
+		<div className='my-dropdown' ref={menuRef}>
 			<button onClick={handleOpenDropdown}>
 				<div className='title__wrapper'>
 					<div
@@ -43,7 +43,7 @@ export default function Dropdown({
 					style={{ transform: `rotate(${open ? 180 : 0}deg)` }}
 				/>
 			</button>
-			<ul ref={menuRef}>
+			<ul >
 				{open && (
 					<>
 						{menu.map((item, index) => (
