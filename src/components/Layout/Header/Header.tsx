@@ -1,14 +1,27 @@
 import './Header.css';
 import Dropdown from '../components/Dropdown/Dropdown';
 import TextField from '../components/TextField/TextField';
+import Button from '../components/Button/Button';
 import { useState, useEffect, useContext } from 'react';
 import { FilterContext } from './../../../context/filterContext';
+import { SnackbarContext } from './../../../context/snackbarContext';
 
 export default function Header() {
 	const [chosenColor, setChosenColor] = useState<string | null>(null);
 	const filterContextValue = useContext(FilterContext);
-	const { setColor, setSearchQuery } = filterContextValue || {};
+	const snackbarContextValue = useContext(SnackbarContext);
 
+	const { setColor, setSearchQuery } = filterContextValue || {};
+	const [snackbarNumber, setSnackbarNumber] = useState(1);
+	const handleClickSnackbar = () => {
+		setSnackbarNumber(prev => prev + 1);
+		if (snackbarContextValue) {
+			const { setSnackbars } = snackbarContextValue;
+			if (setSnackbars) {
+				setSnackbars(prev => [...prev, `snackbar - ${snackbarNumber} `]);
+			}
+		}
+	};
 	useEffect(() => {
 		if (filterContextValue) {
 			if (setColor) {
@@ -31,7 +44,11 @@ export default function Header() {
 						<TextField setSearchQuery={setSearchQuery} />
 					</div>
 					<div className='col'>
-						<button>Click</button>
+						<Button
+							label={'Click'}
+							onClick={handleClickSnackbar}
+							className='custom-btn'
+						></Button>
 					</div>
 				</div>
 			</div>

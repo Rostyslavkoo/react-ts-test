@@ -1,0 +1,20 @@
+.my-button{
+    background-color: #979797;
+    border: none;
+    color: #ffffff;
+    padding: 9px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+.my-button:hover{
+    opacity: .9;
+}
+.my-button:active{
+    transform: scale(0.9);
+    transition: .1s ease-in-out;
+}
